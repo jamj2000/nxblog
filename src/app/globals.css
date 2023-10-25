@@ -63,6 +63,10 @@ a:hover {
   color: rgb(192, 51, 3);
 }
 
+p {
+  padding: 10px;
+}
+
 article {
   margin: 10px 0;
 }
