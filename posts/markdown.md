@@ -3,7 +3,6 @@ title: 'Some examples of Markdown'
 date: '2023-10-24'
 ---
 
-
 # Header 1
 
 ## Header 2

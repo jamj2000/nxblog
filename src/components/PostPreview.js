@@ -2,10 +2,10 @@ import Link from "next/link"
 
 function PostPreview(props) {
     return (
-        <div>
-            <Link href={`/posts/${props.slug}`}><strong>{props.title}</strong></Link>
+        <article>
+            <Link href={`/blog/${props.slug}`}><strong>{props.title}</strong></Link>
             <p>{props.date}</p>
-        </div>
+        </article>
     )
 }
 

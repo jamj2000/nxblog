@@ -12,6 +12,7 @@ const getPostContent = (slug) => {
   return matterResult;
 };
 
+// IMPORTANTE: Genera Parámetros de Ruta estáticos (para SSG)
 export function generateStaticParams() {
   const posts = getPosts()
   return posts.map(post => ({ slug: post.slug })) // importante: ({ slug ... })  
@@ -24,10 +25,13 @@ function page(props) {
   const post = getPostContent(slug)
 
   return (
-    <div>
-      <h1>{post.title}</h1>
+    <section>
+      <article>
+      <h2>{post.data.title}</h2>
+      <hr/><br/>      
       <Markdown>{post.content}</Markdown>
-    </div>
+      </article>
+    </section>
   )
 }
 
