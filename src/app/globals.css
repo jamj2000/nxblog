@@ -71,6 +71,10 @@ article {
   margin: 10px 0;
 }
 
+li {
+  margin-left: 40px;
+}
+
 @media screen and (width <= 600) {
   main {
     width: 350px;
