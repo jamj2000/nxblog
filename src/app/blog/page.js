@@ -1,6 +1,3 @@
-// https://youtu.be/Hiabp1GY8fA?si=LCYcRjvqLVSr51up
-// https://nextjs.org/blog/next-13
-// https://nextjs.org/learn/basics/data-fetching/two-forms
 import getPosts from '@/components/getPosts';
 import PostPreview from '@/components/PostPreview';
 

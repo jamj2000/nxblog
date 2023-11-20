@@ -14,9 +14,9 @@ const getPostContent = (slug) => {
 
 // IMPORTANTE: Genera Parámetros de Ruta estáticos (para SSG)
 export function generateStaticParams() {
-  const posts = getPosts()
-  return posts.map(post => ({ slug: post.slug })) // importante: ({ slug ... })  
-  // return [{ slug: 'ssg-ssr' }]
+  // const posts = getPosts()
+  // return posts.map(post => ({ slug: post.slug })) // importante: ({ slug ... })  
+  return [{ slug: 'ssg-ssr' }, {slug: 'pre-rendering'}, { slug: 'markdown' }]
 }
 
 function page(props) {
