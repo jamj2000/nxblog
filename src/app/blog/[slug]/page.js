@@ -14,9 +14,16 @@ const getPostContent = (slug) => {
 
 // IMPORTANTE: Genera Parámetros de Ruta estáticos (para SSG)
 export function generateStaticParams() {
-  // const posts = getPosts()
-  // return posts.map(post => ({ slug: post.slug })) // importante: ({ slug ... })  
-  return [{ slug: 'ssg-ssr' }, {slug: 'pre-rendering'}, { slug: 'markdown' }]
+  const posts = getPosts()
+  return posts.map(post => ({ slug: post.slug })) // importante: ({ slug ... })  
+  
+  //// En lugar de usar las 2 sentencias anteriores,
+  //// podemos hacer lo siguiente:
+  // return [
+  //   { slug: 'ssg-ssr' },
+  //   { slug: 'pre-rendering'}, 
+  //   { slug: 'markdown' }
+  // ]
 }
 
 function page(props) {
